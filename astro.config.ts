@@ -1,3 +1,5 @@
+  base: '/Math-blog',
+  base: '/Math-blog',
 import { defineConfig, envField, fontProviders } from "astro/config";
 import tailwindcss from "@tailwindcss/vite";
 import sitemap from "@astrojs/sitemap";
@@ -13,6 +15,7 @@ import { SITE } from "./src/config";
 
 export default defineConfig({
 	site: 'https://NihilAkatsuki.github.io/Math-blog/',
+	base: '/Math-blog'
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
