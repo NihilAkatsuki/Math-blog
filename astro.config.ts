@@ -12,8 +12,7 @@ import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
 
 export default defineConfig({
-	site: 'https://NihilAkatsuki.github.io',
-  base: '/Math-blog',
+	site: 'https://NihilAkatsuki.github.io/Math-blog/',
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
