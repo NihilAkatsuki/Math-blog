@@ -11,9 +11,9 @@ import {
 import { transformerFileName } from "./src/utils/transformers/fileName";
 import { SITE } from "./src/config";
 
-// https://astro.build/config
 export default defineConfig({
-  site: SITE.website,
+	site: 'https://NihilAkatsuki.github.io',
+  base: '/Math-blog',
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
