@@ -13,7 +13,8 @@ import { SITE } from "./src/config";
 
 export default defineConfig({
 	site: 'https://NihilAkatsuki.github.io',
-  base: '/Math-blog',
+	base: '/Math-blog',
+  trailingSlash: 'always',
   integrations: [
     sitemap({
       filter: page => SITE.showArchives || !page.endsWith("/archives"),
